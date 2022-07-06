@@ -1,0 +1,95 @@
+{
+  "name": "brain-dance",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "@craco/craco": "6.2.0",
+    "@testing-library/jest-dom": "^5.11.4",
+    "@testing-library/react": "^11.1.0",
+    "@testing-library/user-event": "^12.1.10",
+    "@types/jest": "^26.0.15",
+    "@types/node": "^12.0.0",
+    "@types/react": "^17.0.0",
+    "@types/react-dom": "^17.0.0",
+    "@walletconnect/web3-provider": "1.7.0",
+    "axios": "0.21.1",
+    "bigint-crypto-utils": "3.0.21",
+    "bnc-onboard": "^1.35.4",
+    "body-parser": "^1.19.0",
+    "compression": "^1.7.4",
+    "cookie-parser": "^1.4.5",
+    "cors": "^2.8.5",
+    "cross-env": "^7.0.3",
+    "crypto-js": "^4.1.1",
+    "dotenv-flow": "^3.2.0",
+    "express": "^4.17.1",
+    "fs-extra": "^10.0.0",
+    "keccak256": "1.0.3",
+    "merkletreejs": "0.2.24",
+    "moment": "^2.29.1",
+    "mysql2": "2.3.3",
+    "node-sass": "4.14.1",
+    "path": "^0.12.7",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-google-recaptcha-v3": "1.9.7",
+    "react-modal": "^3.14.4",
+    "react-notifications": "^1.7.2",
+    "react-redux": "^7.2.5",
+    "react-router-dom": "^5.3.0",
+    "react-scripts": "4.0.3",
+    "react-social-icons": "^5.6.1",
+    "react-spinners": "0.11.0",
+    "react-tooltip": "^4.2.21",
+    "redux": "^4.1.1",
+    "redux-thunk": "^2.3.0",
+    "sequelize": "6.11.0",
+    "typescript": "^4.1.2",
+    "web-vitals": "^1.0.1",
+    "web3": "^1.6.1",
+    "web3modal": "1.9.4"
+  },
+  "scripts": {
+    "dev:client": "cross-env NODE_ENV=development craco start",
+    "dev:server": "cross-env NODE_ENV=development nodemon --watch ./server ./server/index.js",
+    "start": "cross-env NODE_ENV=production node ./server/index.js",
+    "build": "craco build",
+    "test": "craco test",
+    "eject": "react-scripts eject",
+    "pm2:start": "pm2 start ./server/index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/crypto-js": "^4.0.2",
+    "@types/dotenv-flow": "^3.2.0",
+    "@types/react-google-recaptcha": "^2.1.2",
+    "@types/react-modal": "^3.13.1",
+    "@types/react-router-dom": "^5.3.1",
+    "craco-plugin-scoped-css": "1.1.1",
+    "nodemon": "^2.0.13"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "resolutions": {
+    "//": "See https://github.com/facebook/create-react-app/issues/11773",
+    "react-error-overlay": "6.0.9"
+  }
+}
